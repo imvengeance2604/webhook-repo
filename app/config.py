@@ -20,8 +20,8 @@ class Config:
     # Flask session encryption key
     SECRET_KEY = os.environ.get("SECRET_KEY", "dev-key")
     
-    # MongoDB Atlas connection string
-    # Format: mongodb+srv://username:password@cluster.mongodb.net/
+    # MongoDB connection string (local or remote)
+    # Local format: mongodb://localhost:27017/
     MONGO_URI = os.environ.get("MONGO_URI", "mongodb://localhost:27017/")
     
     # MongoDB database name for storing events
